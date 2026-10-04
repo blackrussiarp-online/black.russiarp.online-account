@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACK RUSSIA - Закрытое Бета Тестирование [ЗБТ]</title>
+    <!-- Подключение шрифта Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта (навигация) -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="bear.logo.png" alt="Black Russia Logo" class="brand-logo">
+                <div class="brand-text">
+                    <span class="brand-black">BLACK</span>
+                    <span class="brand-russia">RUSSIA</span>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">ЛИЧНЫЙ КАБИНЕТ</a>
+                <a href="promocode.html" class="nav-link">ПРОМОКОД</a>
+                <a href="beta.html" class="nav-link active">ЗБТ</a>
+                <a href="https://forum.blackrussia.online" target="_blank" class="nav-link">ФОРУМ</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент страницы ЗБТ -->
+    <main class="main-content">
+        <div class="hero-bg-banner"></div>
+        
+        <div class="hero-wrapper">
+            <div class="beta-page-container">
+                <!-- Заголовок по ТЗ -->
+                <header class="beta-header-block">
+                    <h1 class="title">Испытай новое обновление!</h1>
+                    <p class="beta-lead">Добро на закрытое бета-тестирование глобального обновления BLACK RUSSIA. Станьте первыми, кто опросит уникальные игровые механики, улучшенную графику, новый транспорт и масштабные системы проекта раньше официального релиза.</p>
+                </header>
+
+                <div class="beta-info-card">
+                    <h3>Что вас ждет в ЗБТ:</h3>
+                    <ul>
+                        <li><span class="check">✓</span> Ранний доступ к новым функциям и картам</li>
+                        <li><span class="check">✓</span> Участие в балансировке экономики и исправлении багов</li>
+                        <li><span class="check">✓</span> Эксклюзивный статус тестировщика на официальном форуме</li>
+                        <li><span class="check">✓</span> Специальные поощрения в основной игре за активный баг-репортинг</li>
+                    </ul>
+                </div>
+
+                <div class="beta-action-wrapper">
+                    <button type="button" class="btn-submit beta-trigger-btn" id="betaBtn">Протестируй Обновление</button>
+
+                    <!-- Предупреждение (Красный и серый текст по ТЗ) -->
+                    <div class="promo-message-box beta-msg-box" id="betaMsgBox">
+                        <p class="promo-error-text">Для начала войдите в личный кабинет!</p>
+                        <p class="promo-hint-text">После этого вы можете начать тестировать новое обновление.</p>
+                        <a href="index.html" class="beta-login-link">Перейти к авторизации →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал сайта с информацией о компании (из второго фото) -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <img src="bear.logo.png" alt="Black Russia Logo">
+                        <div class="footer-logo-text"><span>BLACK</span><span>RUSSIA</span></div>
+                    </div>
+                    <p class="footer-desc">Игра бесплатная и не требует внесения денежных средств. Однако в игре предусмотрена возможность приобретения внутриигровых предметов, валюты (ВС), игровых статусов для наиболее разнообразного геймплея на наших серверах</p>
+                    <nav class="footer-links">
+                        <a href="index.html">Личный кабинет</a>
+                        <a href="https://forum.blackrussia.online" target="_blank">Форум</a>
+                    </nav>
+                </div>
+                <div class="footer-right">
+                    <div class="socials">
+                        <a href="https://m.vk.ru/blackrussia.online" target="_blank" class="social social-vk" aria-label="VK"><svg width="34" height="22" viewBox="0 0 34 22"><text x="17" y="19" text-anchor="middle" font-family="Montserrat,sans-serif" font-weight="900" font-size="22" fill="currentColor">VK</text></svg></a>
+                        <a href="https://t.me/br_dev" target="_blank" class="social social-tg" aria-label="Telegram"><svg width="34" height="30" viewBox="0 0 34 30" fill="currentColor"><path d="M32 1.5L1.8 13.2c-1 .4-1 1.2-.2 1.4l7.6 2.4 2.9 9c.3.9.6 1 1.3.4l4.1-3.4 7.6 5.6c1.400.8 2.400.4 2.800-1.300L33.800 3c.5-1.900-.7-2.700-1.800-1.500zM11.500 16.400L28 6.200c.8-.5 1.500-.2.900.3L15.300 18.800l-.5 5.500z"/></svg></a>
+                        <a href="https://discord.gg/blackrussia" target="_blank" class="social social-dc" aria-label="Discord"><svg width="36" height="28" viewBox="0 0 36 28" fill="currentColor"><path d="M30 3.500A29 29 0 0 0 22.800 1l-.9 1.800a27 27 0 0 0-7.800 0L13.200 1A29 29 0 0 0 6 3.500C1.400 10.300.2 17 .8 23.600a29 29 0 0 0 8.800 4.400l1.900-3a19 19 0 0 1-3-1.400l.7-.6a21 21 0 0 0 17.600 0l.7.600c-1 .6-2 1-3 1.400l1.900 3a29 29 0 0 0 8.800-4.400C36 15.800 34 9.200 30 3.500zM12 19.700c-1.800 0-3.200-1.600-3.200-3.600s1.400-3.600 3.200-3.600 3.200 1.600 3.200 3.600-1.400 3.600-3.200 3.600zm12 0c-1.800 0-3.200-1.600-3.200-3.600s1.400-3.600 3.200-3.600 3.200 1.600 3.200 3.600-1.400 3.600-3.200 3.600z"/></svg></a>
+                        <a href="https://youtube.com/@blackrussia.mobile?si=_q5hyDljt4gPMhvU" target="_blank" class="social social-yt" aria-label="YouTube"><svg width="38" height="27" viewBox="0 0 38 27" fill="currentColor"><path d="M37 4.200A4.800 4.800 0 0 0 33.600.8C30.600 0 19 0 19 0S7.400 0 4.400.8A4.800 4.800 0 0 0 1 4.200C.2 7.200.2 13.500.2 13.500s0 6.300.8 9.300a4.800 4.800 0 0 0 3.400 3.400c3 .8 14.600.8 14.600.8s11.600 0 14.600-.8a4.800 4.800 0 0 0 3.400-3.400c.8-3 .8-9.300.8-9.300s0-6.300-.8-9.300zM15.200 19.200V7.800l9.900 5.700z"/></svg></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-line"></div>
+
+            <!-- Точная юридическая информация компании со второго фото -->
+            <div class="footer-legal">
+                <b>Общество с ограниченной ответственностью «Блекхаб Геймс»</b><br>
+                ИНН: 7841098558<br>
+                ОГРН: 1227800054668<br>
+                197101, г. Санкт-Петербург, вн. тер. г. Муниципальный округ Кронверкское, пр-кт Большой П.С., д. 53, к. 3, литера А<br>
+                <b>support_br@blackhub.games</b><br>
+                ОКВЭД ОК 029-2014 (КДЕС Ред. 2)) 62.01 Разработка компьютерного программного обеспечения<br>
+                Мобильная игра «BLACK RUSSIA» Реестровая запись № 20068 от 27.11.2023
+            </div>
+
+            <div class="footer-line"></div>
+
+            <div class="footer-bottom">
+                <span class="copyright">© ВСЕ ПРАВА ЗАЩИЩЕНЫ ООО "БЛЕКХАБ ГЕЙМС"</span>
+                <nav class="footer-docs">
+                    <a href="https://blackrussia.online/docs/policy.pdf" target="_blank">Политика конфиденциальности</a>
+                    <a href="https://blackrussia.online/docs/oferta.pdf" target="_blank">Договор оферты</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
